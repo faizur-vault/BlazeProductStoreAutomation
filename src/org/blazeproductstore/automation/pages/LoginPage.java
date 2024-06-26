@@ -44,5 +44,11 @@ public class LoginPage extends LoginPageObjects {
 		wait.until(ExpectedConditions.elementToBeClickable(pageObjects.login_Button_XPATH));
 		pageObjects.login_Button_XPATH.click();
 	}
+	
+	public void verifyLoggedIn() throws IOException
+	{
+		wait.until(ExpectedConditions.elementToBeClickable(pageObjects.loggedin_Username));
+		assert(pageObjects.loggedin_Username.isDisplayed());
+	}
 
 }

@@ -16,5 +16,8 @@ public class LoginPageObjects {
 
     @FindBy(xpath = "//button[@onclick='logIn()']")
     public WebElement login_Button_XPATH;
+    
+    @FindBy(id = "nameofuser")
+    public WebElement loggedin_Username;
 
 }

@@ -16,7 +16,8 @@ public class TC_002_ValidateSignUp extends DriverInstance {
 		signupPage.selectSignUpOption();
 		signupPage.enterUsername(uname);
 		signupPage.enterPassword(pwd);
-		signupPage.clickLoginButton();
+		signupPage.clickSignUpButton();
+		signupPage.verifyUserCreated();
 	}
 
 }

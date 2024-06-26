@@ -7,16 +7,9 @@
         <methods>
           <include name="closeDriverInstance"/>
           <include name="initiateDriverInstance"/>
-          <include name="tc_002_validateSignUp"/>
+          <include name="tc_002_validateSignUp" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- org.blazeproductstore.automation.testcases.TC_002_ValidateSignUp -->
-      <class name="org.blazeproductstore.automation.testcases.TC_001_ValidateLogin">
-        <methods>
-          <include name="closeDriverInstance"/>
-          <include name="tc_001_validateLogin"/>
-          <include name="initiateDriverInstance"/>
-        </methods>
-      </class> <!-- org.blazeproductstore.automation.testcases.TC_001_ValidateLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

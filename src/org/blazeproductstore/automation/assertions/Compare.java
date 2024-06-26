@@ -23,5 +23,15 @@ public class Compare {
 		}
 		return bool;
 	}
+	
+	public static boolean verifyAlertText(WebDriver driver, String expTxt)
+	{
+		boolean bool = false;
+		if(driver.switchTo().alert().getText().equalsIgnoreCase(expTxt))
+		{
+			bool=true;
+		}
+		return bool;
+	}
 
 }

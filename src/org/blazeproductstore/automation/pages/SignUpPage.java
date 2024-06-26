@@ -3,6 +3,7 @@ package org.blazeproductstore.automation.pages;
 import java.io.IOException;
 
 import org.blazeproductstore.automation.webelements.SignUpPageObjects;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -40,10 +41,18 @@ public class SignUpPage {
 		pageObjects.passWord.sendKeys(pass);
 	}
 	
-	public void clickLoginButton() throws IOException
+	public void clickSignUpButton() throws IOException
 	{
 		wait.until(ExpectedConditions.elementToBeClickable(pageObjects.signUp_Button));
 		pageObjects.signUp_Button.click();
+	}
+	
+	public void verifyUserCreated() throws IOException
+	{
+		wait.until(ExpectedConditions.alertIsPresent());
+		Alert alert = driver.switchTo().alert();
+		assert(alert.getText().equalsIgnoreCase("Sign up successful.") || alert.getText().equalsIgnoreCase("This user already exist."));
+        alert.accept();
 	}
 
 } 

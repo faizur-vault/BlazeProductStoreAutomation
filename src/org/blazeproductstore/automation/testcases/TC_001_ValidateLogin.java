@@ -17,6 +17,7 @@ public class TC_001_ValidateLogin extends DriverInstance {
 		login.enterUsername(uname);
 		login.enterPassword(pwd);
 		login.clickLoginButton();
+		login.verifyLoggedIn();
 	}
 
 }
