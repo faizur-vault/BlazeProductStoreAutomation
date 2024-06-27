@@ -2,6 +2,8 @@ package org.blazeproductstore.automation.base;
 
 import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.blazeproductstore.automation.utility.Utility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +14,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class DriverInstance {
-	
+
 	public static WebDriver driver;
     public static WebDriverWait wait;
 	

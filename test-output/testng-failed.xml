@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.blazeproductstore.automation.testcases.TC_002_ValidateSignUp">
+      <class name="org.blazeproductstore.automation.testcases.TC_001_ValidateLogin">
         <methods>
           <include name="closeDriverInstance"/>
+          <include name="tc_001_validateLogin" invocation-numbers="1 2"/>
           <include name="initiateDriverInstance"/>
-          <include name="tc_002_validateSignUp" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- org.blazeproductstore.automation.testcases.TC_002_ValidateSignUp -->
+      </class> <!-- org.blazeproductstore.automation.testcases.TC_001_ValidateLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
